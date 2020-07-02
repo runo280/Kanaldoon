@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">کانالدون</string>
+    <string name="manage_categories">مدیریت دسته بندی ها</string>
+    <string name="categories">دسته بندی:</string>
+    <string name="target_app">برنامه مقصد:</string>
+    <string name="channel_username">نام کاربری کانال</string>
+    <string name="new_channel">کانال جدید</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="ask_to_delete_item">آیا برای حذف این مورد مطمئن هستید؟</string>
+    <string name="update_category">ویرایش دسته بندی</string>
+    <string name="add_category">افزودن دسته بندی</string>
+    <string name="add_channel">افزودن کانال</string>
+    <string name="edit_channel">ویرایش کانال</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <action
+        android:id="@+id/gActionManagerCategories"
+        app:destination="@id/categoryFragment" />
+    <action
+        android:id="@+id/gActionAddChannel"
+        app:destination="@id/addChannelFragment" />
+
+
+    <!--<fragment
+        android:id="@+id/channelFragment"
+        android:name="app.runo.kanaldoon.ui.channel.manage.ChannelFragment"
+        android:label="channel_fragment"
+        tools:layout="@layout/channel_fragment">
+        <action
+            android:id="@+id/actionAddNewChannel"
+            app:destination="@id/addChannelFragment" />
+    </fragment>-->
+    <fragment
+        android:id="@+id/addChannelFragment"
+        android:name="app.runo.kanaldoon.ui.channel.add.AddChannelFragment"
+        android:label="add_channel_fragment"
+        tools:layout="@layout/add_channel_fragment" >
+        <argument
+            android:name="editMode"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="app.runo.kanaldoon.ui.category.manage.CategoryFragment"
+        android:label="category_fragment"
+        tools:layout="@layout/category_fragment">
+        <action
+            android:id="@+id/actionAddNewCategory"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="app.runo.kanaldoon.ui.category.add.AddCategoryFragment"
+        android:label="add_category_fragment"
+        tools:layout="@layout/add_category_fragment">
+        <argument
+            android:name="editMode"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+
+        android:id="@+id/mainFragment"
+        android:name="app.runo.kanaldoon.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/actionManagerCategories"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/actionAddNewChannel"
+            app:destination="@id/addChannelFragment" />
+    </fragment>
+</navigation>
